@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Tagmulim Extension",
+    "version": "1.0.0",
+    "author": "dk58554@gmail.com",
+  
+    "description": "Chrome extention that displays the tagmulim info on the main site with each item page",
+    "icons": {
+        "16": "./assets/icon16.png",
+        "48": "./assets/icon48.png",
+        "128": "./assets/icon128.png"
+    },
+    "action": {
+        "default_icon" : {
+            "16": "./assets/icon16.png",
+            "48": "./assets/icon48.png",
+            "128": "./assets/icon128.png"
+        }
+    }
+    
+    
+  }
