@@ -22,13 +22,19 @@
         "service_worker": "background.js"
     },
 
-    "content_scripts": [{
-        "matches": ["https://www.bug.co.il/brand/*"],
-        "css": ["main.css"],
-        "js": ["contentScript.js"],
-        "run_at": "document_end"
-
-    }]
+    "content_scripts": [
+        {
+            "matches": ["https://www.bug.co.il/brand/*"],
+            "css": ["main.css"],
+            "js": ["contentInjectScript.js"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": ["http://127.0.0.1:5500/*"],
+            "js": ["tableScrapeScript.js"],
+            "run_at": "document_end"
+        }
+    ]
     
     
   }
